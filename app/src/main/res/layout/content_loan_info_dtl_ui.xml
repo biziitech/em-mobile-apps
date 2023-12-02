@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.LoanInfoDtlUI"
+    tools:showIn="@layout/activity_loan_info_dtl_ui">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingStart="@dimen/count_5dp"
+        android:paddingEnd="@dimen/count_5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/count_4dp"
+            android:paddingTop="@dimen/count_5dp"
+            android:paddingEnd="@dimen/count_4dp"
+            android:paddingBottom="@dimen/count_5dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="লোন আইডি :"
+                    android:textAllCaps="false"
+                    android:paddingBottom="@dimen/count_10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="আবেদনের তারিখ :"
+                    android:paddingBottom="@dimen/count_10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_12sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" অনুমোদনের তারিখ :"
+                    android:paddingBottom="@dimen/count_10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="বরাদ্দের পরিমাণ :"
+                    android:paddingBottom="@dimen/count_10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_12sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="প্রদানের পরিমান :"
+                    android:paddingBottom="@dimen/count_10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ব্যাংকের নাম :"
+                    android:paddingBottom="@dimen/count_10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_12sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ব্যাংকের শাখার নাম :"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txLoan_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="২২৮৫"
+                    android:paddingBottom="@dimen/count_10dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_12sp" />
+
+                <TextView
+                    android:id="@+id/txt_application_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="১০/১১/২০১৯"
+                    android:paddingBottom="@dimen/count_10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_12sp" />
+
+                <TextView
+                    android:id="@+id/txt_sanctioned_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="১২/১১/২০১৯"
+                    android:textAlignment="center"
+                    android:paddingBottom="@dimen/count_10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_12sp" />
+
+                <TextView
+                    android:id="@+id/txt_sanctioned_amt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="২০,০০০.০০"
+                    android:textAlignment="center"
+                    android:paddingBottom="@dimen/count_10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_12sp" />
+                <TextView
+                    android:id="@+id/txt_disburse_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="১০,০০০.০০"
+                    android:paddingBottom="@dimen/count_10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_12sp" />
+
+                <TextView
+                    android:id="@+id/txt_bank_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="সোনালী ব্যাংক লিমিটেড "
+                    android:textAlignment="center"
+                    android:paddingBottom="@dimen/count_10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_12sp" />
+
+                <TextView
+                    android:id="@+id/txt_branch_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="পটুয়াখালী শাখা , পটুয়াখালি। "
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

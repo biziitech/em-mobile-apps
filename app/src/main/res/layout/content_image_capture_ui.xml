@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.ImageCaptureUI"
+    tools:showIn="@layout/activity_image_capture_ui">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="@dimen/count_8dp"
+        android:paddingEnd="@dimen/count_8dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/count_8dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/count_180dp"
+                android:layout_height="@dimen/count_240dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dumy_img"
+                android:layout_marginTop="@dimen/count_5dp" />
+            <Button
+                android:id="@+id/btnCaptureImage"
+                android:layout_gravity="center"
+                android:paddingEnd="@dimen/count_5dp"
+                android:layout_width="@dimen/count_150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/count_10dp"
+                android:onClick="captureImg"
+                android:background="@drawable/button_shape2"
+                android:drawableRight="@drawable/photo_camera24"
+                android:text="ছবি তুলুন"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="@dimen/count_160dp"
+                android:layout_height="@dimen/count_200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/count_5dp"
+                android:background="#D1F59B" />
+            <Button
+                android:id="@+id/btnCaptureImage2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/count_10dp"
+                android:background="@color/appGreen"
+                android:drawableRight="@android:drawable/ic_menu_camera"
+                android:text="ছবি তুলুন"
+                android:onClick="captureImg"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/count_16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancelPicture"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/count_2dp"
+                android:layout_weight=".5"
+                android:background="#ff4f30"
+                android:text="পেছনে যান"
+                android:textSize="@dimen/count_13sp"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btnSaveImage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/count_2dp"
+                android:layout_weight=".5"
+                android:background="@color/appGreen"
+                android:text="সেভ করুন"
+                android:textSize="@dimen/count_13sp"
+                android:textColor="@color/colorWhite" />
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnImgDisp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/count_2dp"
+            android:background="@color/colorNew"
+            android:layout_marginTop="@dimen/count_20dp"
+            android:text="দাখিলকৃত ছবি দেখুন"
+            android:padding="@dimen/count_10dp"
+            android:textAllCaps="false"
+            android:textSize="@dimen/count_11sp"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

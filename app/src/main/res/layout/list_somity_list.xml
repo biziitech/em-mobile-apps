@@ -1,0 +1,173 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/count_4dp"
+    android:paddingEnd="@dimen/count_4dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewTaskList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:paddingStart="@dimen/count_2dp"
+        android:paddingEnd="@dimen/count_2dp"
+        app:cardCornerRadius="@dimen/count_4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/idLinearSamityList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/count_4dp"
+                android:paddingTop="@dimen/count_5dp"
+                android:paddingEnd="@dimen/count_4dp"
+                android:paddingBottom="@dimen/count_2dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="30"
+                            android:text="বেসিক সেন্টার:"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:id="@+id/basicCenterName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:text="center"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/count_3dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="30"
+                            android:text="সমিতির নাম :"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:id="@+id/somityName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:text="name"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/count_3dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="30"
+                            android:text="সমিতি আইডি :"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:id="@+id/somityAddress"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:text="id"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/count_3dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="35"
+                            android:text="ঋণের আণেদন সংখ্যা:"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:id="@+id/tvMemQuantity"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="41"
+                            android:text="Quan"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="24"
+                            android:src="@drawable/next"
+                            android:layout_height="@dimen/count_15dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnFinalSubmit"
+                android:layout_width="@dimen/count_150dp"
+                android:layout_height="@dimen/count_30dp"
+                android:background="@drawable/button_shape4"
+                android:text="চুড়ান্ত দাখিল"
+                android:visibility="gone"
+                android:layout_marginStart="@dimen/count_20dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/count_11sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/count_1dp"
+                android:background="@color/colorGreen"
+                android:layout_marginTop="@dimen/count_3dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

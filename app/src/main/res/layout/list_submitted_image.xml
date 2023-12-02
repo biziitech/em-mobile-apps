@@ -1,0 +1,86 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/count_4dp"
+    android:paddingEnd="@dimen/count_4dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewTaskList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:paddingStart="@dimen/count_2dp"
+        android:paddingEnd="@dimen/count_2dp"
+        app:cardCornerRadius="@dimen/count_4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/count_4dp"
+                android:paddingTop="@dimen/count_5dp"
+                android:paddingEnd="@dimen/count_4dp"
+                android:paddingBottom="@dimen/count_5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/id_img_display"
+                        android:src="@drawable/demo_imgs"
+                        android:layout_width="@dimen/count_100dp"
+                        android:layout_height="@dimen/count_120dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:orientation="vertical">
+
+                 <!--   <TextView
+                        android:id="@+id/txLoan_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Created At"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/count_11sp" />
+                        -->
+
+                    <TextView
+                        android:id="@+id/txt_img_creteDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Creation Date :"
+                        android:layout_marginTop="@dimen/count_30dp"
+                        android:layout_marginStart="@dimen/count_30dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/count_11sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/count_1dp"
+                android:background="#009688"
+                android:paddingTop="@dimen/count_1dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

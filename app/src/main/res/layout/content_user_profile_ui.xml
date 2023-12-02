@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.UserProfileUI"
+    tools:showIn="@layout/activity_user_profile_ui">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/count_20dp"
+        android:layout_marginTop="@dimen/count_20dp"
+        android:paddingStart="@dimen/count_10dp"
+        android:paddingEnd="@dimen/count_8dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/count_5dp"
+            android:paddingEnd="@dimen/count_4dp"
+            android:paddingStart="@dimen/count_4dp"
+            android:paddingTop="@dimen/count_5dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="43"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="এন আইডি নং :"
+                    android:textAllCaps="false"
+                    android:paddingTop="@dimen/count_4dp"
+                    android:paddingBottom="@dimen/count_4dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_13sp" />
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="জন্ম তারিখ :"
+                    android:paddingTop="@dimen/count_4dp"
+                    android:paddingBottom="@dimen/count_4dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_12sp" />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="বেসিক সেন্টার আইডি:"
+                    android:paddingTop="@dimen/count_4dp"
+                    android:paddingBottom="@dimen/count_4dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="নাম:"
+                    android:paddingTop="@dimen/count_4dp"
+                    android:paddingBottom="@dimen/count_4dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_13sp" />
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="পিতার নাম:"
+                    android:textAlignment="center"
+                    android:paddingTop="@dimen/count_4dp"
+                    android:paddingBottom="@dimen/count_4dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_12sp" />-->
+
+               <!-- <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="মাতার নাম :"
+                    android:textAllCaps="false"
+                    android:paddingTop="@dimen/count_4dp"
+                    android:paddingBottom="@dimen/count_4dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_12sp" />-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="সমিতির নাম :"
+                    android:textAllCaps="false"
+                    android:paddingTop="@dimen/count_4dp"
+                    android:paddingBottom="@dimen/count_4dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_13sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ইউজার টাইপ :"
+                    android:paddingTop="@dimen/count_4dp"
+                    android:paddingBottom="@dimen/count_4dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="সদস্য নং :"
+                    android:textAlignment="center"
+                    android:paddingTop="@dimen/count_4dp"
+                    android:paddingBottom="@dimen/count_4dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="মোবাইল নম্বর :"
+                    android:paddingTop="@dimen/count_4dp"
+                    android:paddingBottom="@dimen/count_4dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="57"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="১৪৫৭৪৬১২২"
+                    android:paddingTop="@dimen/count_4dp"
+                    android:paddingBottom="@dimen/count_4dp"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_13sp" />
+
+               <!-- <TextView
+                    android:id="@+id/tvDob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="১২/০৮/১৯৮৯"
+                    android:paddingTop="@dimen/count_4dp"
+                    android:paddingBottom="@dimen/count_4dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_12sp" />-->
+                <TextView
+                    android:id="@+id/tvBasicCenterId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="basic center id"
+                    android:paddingTop="@dimen/count_4dp"
+                    android:paddingBottom="@dimen/count_4dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_13sp" />
+
+                <TextView
+                    android:id="@+id/tvFullName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="মোঃ আলী হোসেন "
+                    android:textStyle="bold"
+                    android:paddingTop="@dimen/count_4dp"
+                    android:paddingBottom="@dimen/count_4dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_13sp" />
+
+               <!-- <TextView
+                    android:id="@+id/tvFatherName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="জাহাঙ্গীর মোল্লা"
+                    android:paddingTop="@dimen/count_4dp"
+                    android:paddingBottom="@dimen/count_4dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_10sp" />-->
+
+               <!-- <TextView
+                    android:id="@+id/tvMotherName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="জাহানারা বেগম "
+                    android:paddingTop="@dimen/count_4dp"
+                    android:paddingBottom="@dimen/count_4dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_12sp" />-->
+
+                <TextView
+                    android:id="@+id/tvSomityName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textStyle="bold"
+                    android:paddingTop="@dimen/count_4dp"
+                    android:paddingBottom="@dimen/count_4dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_13sp" />
+
+                <TextView
+                    android:id="@+id/tvUserType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="২২৮৫"
+                    android:paddingTop="@dimen/count_4dp"
+                    android:paddingBottom="@dimen/count_4dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_13sp" />
+
+                <TextView
+                    android:id="@+id/tvMemberNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="২২৮"
+                    android:paddingTop="@dimen/count_4dp"
+                    android:paddingBottom="@dimen/count_4dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/count_13sp" />
+
+                <TextView
+                    android:id="@id/tvMobileNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="০১৭৭৮৭৮৭৪৫"
+                    android:paddingTop="@dimen/count_4dp"
+                    android:paddingBottom="@dimen/count_4dp"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/count_13sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

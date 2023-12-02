@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/count_8dp"
+                android:paddingEnd="@dimen/count_8dp"
+                android:paddingBottom="@dimen/count_10dp"
+                android:paddingTop="@dimen/count_5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/id_linear_layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/count_5dp"
+                    android:paddingEnd="@dimen/count_4dp"
+                    android:paddingStart="@dimen/count_4dp"
+                    android:paddingTop="@dimen/count_5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="43"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="জাতীয় পরিচয় পত্র :"
+                            android:textAllCaps="false"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="জন্ম তারিখ :"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="নাম :"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="পিতা/স্বামীর নাম :"
+                            android:textAllCaps="false"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="মোবাইল নম্বর :"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="57"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvNid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:id="@+id/tvDob"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:id="@+id/tvApplicantName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:id="@+id/tvFaterOrHousband"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:id="@+id/tvMobileNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/count_1dp"
+                    android:background="#009688"
+                    android:paddingTop="@dimen/count_1dp" />
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/count_5dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/count_4dp"
+                    android:paddingBottom="@dimen/count_4dp"
+                    android:layout_marginBottom="@dimen/count_3dp"
+                    android:background="@color/colorNew"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/count_10sp"
+                        android:textColor="@color/colorWhite"
+                        android:text="তাঁতের শ্রেণি" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/count_10sp"
+                        android:textColor="@color/colorWhite"
+                        android:text="বর্তমান তাঁতের সংখ্যা " />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/count_10sp"
+                        android:textColor="@color/colorWhite"
+                        android:text="সরে জমিনে পাওয়া সংখ্যা" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/count_3dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvSamityTatInformation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/id_empty_machineData"
+                        android:layout_width="match_parent"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:textSize="@dimen/count_15sp"
+                        android:padding="@dimen/count_10dp"
+                        android:layout_marginTop="@dimen/count_10dp"
+                        android:layout_marginBottom="@dimen/count_10dp"
+                        android:text="No Machine Data found"
+                        android:textColor="@color/btnColorRed"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/count_5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="30"
+                            android:text="মতব্য "
+                            android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/etMachineComments"
+                        android:layout_width="0dp"
+                        android:layout_weight="70"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/count_12sp"
+                        android:hint="মতব্য লিখুন " />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="30"
+                            android:text="পরিদর্শনের তারিখ "
+                            android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/etSelectDate"
+                        android:layout_width="0dp"
+                        android:layout_weight="70"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:drawableRight="@drawable/calendar_32"
+                        android:focusable="false"
+                        android:textAlignment="center"
+                        android:textColor="#028b62"
+                        android:textColorHint="#028b62"
+                        android:textSize="@dimen/count_13sp"
+                        android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/count_5dp"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/btnCancelClear"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/count_2dp"
+                            android:layout_weight=".5"
+                            android:background="#ff4f30"
+                            android:text="ক্লিয়ার"
+                            android:textSize="@dimen/count_13sp"
+                            android:textColor="@color/colorWhite" />
+
+                        <Button
+                            android:id="@+id/btnSubmitMachineData"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/count_2dp"
+                            android:layout_weight=".5"
+                            android:background="@color/colorGreen"
+                            android:text="সেভ করুন"
+                            android:textSize="@dimen/count_13sp"
+                            android:textColor="@color/colorWhite" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

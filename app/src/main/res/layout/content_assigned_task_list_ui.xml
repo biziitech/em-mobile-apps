@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.AssignedTaskListUI"
+    tools:showIn="@layout/activity_assigned_task_list_ui">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/count_3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="2dp"
+        android:background="@color/bgHeaderPatientInfo"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/count_9dp"
+        android:paddingBottom="@dimen/count_9dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:paddingLeft="@dimen/count_6dp"
+            android:text="name"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/count_11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:paddingLeft="@dimen/count_6dp"
+            android:text="Mobile No"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/count_11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="45"
+            android:text="Address"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/count_11sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_assignedTaskList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#0e0e0e"
+                android:dividerHeight="@dimen/count_1dp"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:id="@+id/empty_rcView_assignedTask"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="no data found"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/count_15sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

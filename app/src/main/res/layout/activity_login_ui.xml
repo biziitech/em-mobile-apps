@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.LoginUI">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/count_15dp">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/count_100dp"
+                android:layout_height="@dimen/count_100dp"
+                android:src="@drawable/govt_logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/count_8dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorNew"
+                android:text="বাংলাদেশ তাঁত বোর্ড"
+                android:textStyle="bold"
+                android:textSize="@dimen/count_16sp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:textColor="@color/colorNew"
+                android:text="গণপ্রজাতন্ত্রী বাংলাদেশ সরকার"
+                android:textSize="@dimen/count_15sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/count_12dp"
+                android:textAlignment="center"
+                android:textColor="#E91708"
+                android:text="লগইন করুন"
+                android:textSize="@dimen/count_15sp"
+                android:layout_height="wrap_content"/>
+
+
+           <!-- <ImageView
+                android:layout_width="@dimen/count_180dp"
+                android:layout_height="@dimen/count_55dp"
+                android:layout_gravity="center"
+                android:src="@drawable/square_logo_trn" />-->
+
+            <EditText
+                android:id="@+id/login_userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/count_14dp"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:hint="লগইন আইডি"
+                android:textAlignment="center"
+                android:textSize="@dimen/count_14sp" />
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="পাসওয়ার্ড"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textSize="@dimen/count_15sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape1"
+                android:text="লগইন"
+                android:onClick="usrLogin"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/count_14sp" />
+
+            <CheckBox
+                android:id="@+id/checkKpMeLgn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/count_6dp"
+                android:checked="true"
+                android:text="লগইন করে রাখুন"
+                android:textColor="@color/colorNew"
+                android:textAlignment="center"
+                android:textSize="@dimen/count_12sp" />
+
+            <TextView
+                android:id="@+id/tv_log_register_device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorNew"
+                android:layout_marginTop="@dimen/count_5dp"
+                android:text="পাসওয়ার্ড ভুলে গেছেন?"
+                android:textAlignment="center"
+                android:textSize="@dimen/count_12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

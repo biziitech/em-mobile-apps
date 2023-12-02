@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.FieldVisitInputUI"
+    tools:showIn="@layout/activity_field_visit_input_ui">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/count_10dp"
+        android:paddingEnd="@dimen/count_10dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/count_10dp"
+            android:hint="জাতীয় পরিচয় পত্র নম্বর *"
+            android:textSize="@dimen/count_14sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/count_8dp"
+            android:hint="জন্ম তারিখ *(mm/dd/yyyy)"
+            android:textSize="@dimen/count_14sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/count_8dp"
+            android:hint="আবেদনকারীর নাম (বাংলায়) *"
+            android:textSize="@dimen/count_14sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/count_8dp"
+            android:hint="নাম (ইংরেজীতে) *"
+            android:textSize="@dimen/count_14sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/count_8dp"
+            android:hint="আবেদনকারীর ছবি *"
+            android:textSize="@dimen/count_14sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/count_8dp"
+            android:hint="পিতা বা স্বামীর নাম *"
+            android:textSize="@dimen/count_14sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/count_8dp"
+            android:hint="স্থায়ী ঠিকানা "
+            android:textSize="@dimen/count_14sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/count_8dp"
+            android:hint="বর্তমান ঠিকানা "
+            android:textSize="@dimen/count_14sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/count_8dp"
+            android:hint="মোবাইল নম্বর"
+            android:textSize="@dimen/count_14sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/count_8dp"
+            android:hint="বয়স"
+            android:textSize="@dimen/count_14sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/count_8dp"
+            android:hint="গ্রাম"
+            android:textSize="@dimen/count_14sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/count_8dp"
+            android:hint="ডাকঘর"
+            android:textSize="@dimen/count_14sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/count_8dp"
+            android:hint="জেলা *"
+            android:textSize="@dimen/count_14sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/count_8dp"
+            android:hint="থানা/উপজেলা *"
+            android:textSize="@dimen/count_14sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/count_8dp"
+            android:hint="গ্রাম"
+            android:textSize="@dimen/count_14sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/count_8dp"
+            android:hint="গ্রাম"
+            android:textSize="@dimen/count_14sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/count_8dp"
+            android:hint="গ্রাম"
+            android:textSize="@dimen/count_14sp" />
+
+        <ImageView
+            android:id="@+id/Imageprev"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/cpic"
+            android:layout_width="match_parent"
+            android:text="capture Image"
+            android:layout_marginTop="@dimen/count_8dp"
+            android:drawableRight="@drawable/ic_menu_camera"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:layout_marginTop="@dimen/count_15dp"
+            android:layout_width="match_parent"
+            android:text="submit"
+            android:background="@color/colorNew"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

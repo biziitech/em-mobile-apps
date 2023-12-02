@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.UserProfileUI"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#fcfcfc"
+    android:gravity="center"
+    android:id="@+id/ll">
+
+    <LinearLayout
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:paddingStart="@dimen/count_5dp"
+        android:paddingEnd="@dimen/count_5dp"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/count_40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvLoanInspectionList"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="@dimen/count_110dp"
+            app:cardCornerRadius="@dimen/count_6dp"
+            app:cardElevation="@dimen/count_8dp"
+            android:layout_margin="@dimen/count_6dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/count_60dp"
+                    android:layout_height="@dimen/count_60dp"
+                    android:padding="@dimen/count_12dp"
+                    android:background="@drawable/cerclebackgroundpink"
+                    android:src="@drawable/clipboards_2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGreen"
+                    android:layout_marginTop="@dimen/count_10dp"
+                    android:textSize="@dimen/count_13sp"
+                    android:text="ঋণ পরিদর্শন তালিকা "/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvSomityInspectionList"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="@dimen/count_110dp"
+            app:cardCornerRadius="@dimen/count_6dp"
+            app:cardElevation="@dimen/count_8dp"
+            android:layout_margin="@dimen/count_6dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="@dimen/count_60dp"
+                    android:layout_height="@dimen/count_60dp"
+                    android:padding="@dimen/count_12dp"
+                    android:background="@drawable/cerclebackgroundpink"
+                    android:src="@drawable/clipboards_2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGreen"
+                    android:layout_marginTop="@dimen/count_10dp"
+                    android:textSize="@dimen/count_13sp"
+                    android:text="সমিতি পরিদর্শন তালিকা"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvRepayment"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/count_110dp"
+            app:cardCornerRadius="@dimen/count_6dp"
+            android:visibility="gone"
+            app:cardElevation="@dimen/count_8dp"
+            android:layout_margin="@dimen/count_6dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/count_60dp"
+                    android:layout_height="@dimen/count_60dp"
+                    android:background="@drawable/cerclebackgroundpink"
+                    android:padding="@dimen/count_12dp"
+                    android:src="@drawable/payment_method" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGreen"
+                    android:layout_marginTop="@dimen/count_10dp"
+                    android:textSize="@dimen/count_13sp"
+                    android:text="ঋণ পরিশোধ"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+   <LinearLayout
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvUserProfile"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/count_100dp"
+            android:layout_margin="@dimen/count_6dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/count_60dp"
+                    android:layout_height="@dimen/count_60dp"
+                    android:padding="@dimen/count_10dp"
+                    android:background="@drawable/cerclebackgroundgreen"
+                    android:src="@drawable/user_d" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/count_7dp"
+                    android:text="প্রোফাইল"
+                    android:textColor="@color/colorGreen" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvLoanInfo"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/count_100dp"
+            android:layout_margin="@dimen/count_6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/count_60dp"
+                    android:layout_height="@dimen/count_60dp"
+                    android:padding="@dimen/count_10dp"
+                    android:background="@drawable/cerclebackgroundgreen"
+                    android:src="@drawable/information" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/count_7dp"
+                    android:text="ঋণ ও কিস্তির তথ্য"
+                    android:textColor="@color/colorGreen" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/lightgray" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+       <androidx.cardview.widget.CardView
+           android:id="@+id/cvInstallmentInfo"
+           android:foreground="?android:attr/selectableItemBackground"
+           android:clickable="true"
+           android:layout_width="match_parent"
+           android:visibility="gone"
+           android:layout_height="@dimen/count_100dp"
+           android:layout_margin="@dimen/count_6dp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center"
+               android:orientation="vertical">
+
+               <ImageView
+                   android:layout_width="@dimen/count_60dp"
+                   android:layout_height="@dimen/count_60dp"
+                   android:padding="@dimen/count_12dp"
+                   android:background="@drawable/cerclebackgroundgreen"
+                   android:src="@drawable/payment_method" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/count_7dp"
+                   android:text="কিস্তির তথ্য"
+                   android:textColor="@color/colorGreen" />
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_margin="10dp"
+                   android:background="@color/lightgray" />
+           </LinearLayout>
+       </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_id_emptyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Data found"
+        android:textAlignment="center"
+        android:textColor="@color/btnColorRed"
+        android:visibility="gone"
+        android:textSize="@dimen/count_16sp" />
+</LinearLayout>

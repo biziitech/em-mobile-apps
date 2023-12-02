@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">ই-লোন</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">admin@eloan.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_about_ui">About</string>
+    <string name="title_activity_assigned_task_list_ui">Assigned Tasks</string>
+    <string name="title_activity_field_visit_input_ui">Field Visit</string>
+    <string name="title_activity_member_detail_ui">Member Detail</string>
+
+    <!--dash boar items-->
+
+    <string name="item1">সমিতি ইন্সপেকশন লিস্ট</string>
+    <string name="item2">লোন ইন্সপেকশন লিস্ট</string>
+    <string name="item3">লোন কালেকশন</string>
+    <string name="item4">সংরক্ষিত সমিতি ইন্সপেকশন লিস্ট </string>
+    <string name="item5">সংরক্ষিত লোন ইন্সপেকশন লিস্ট</string>
+    <string name="item6">সংরক্ষিত লোন ইন্সপেকশন লিস্ট</string>
+    <string name="title_activity_somity_list_ui">সমিতির তালিকা</string>
+    <string name="title_activity_somity_member_list_ui">সদস্য তালিকা</string>
+    <string name="title_activity_somity_member_details_ui">সদস্যের বিস্তারিত</string>
+    <string name="title_capture_ui">ছবি তুলুন</string>
+    <string name="title_activity_somity_member_list_type">সমিতি সদস্যের ধরণ</string>
+    <string name="title_activity_notification_ui">Notification</string>
+    <string name="title_activity_password_change_ui">Password Change</string>
+    <string name="title_activity_loan_info_ui">লোনের তথ্য</string>
+    <string name="title_activity_installment_info_ui">কিস্তির তথ্য</string>
+    <string name="title_activity_loan_info_dtl_ui">লোনের বিস্তারিত তথ্য</string>
+    <string name="title_activity_display_submitted_img_ui">দাখিলকৃত ছবি</string>
+    <string name="title_activity_rep_member_list_ui">সদস্য তালিকা</string>
+    <string name="title_activity_repay_loan_collection_ui">বকেয়া উত্তোলন</string>
+    <string name="title_activity_repay_dash_board_ui">Repayment</string>
+    <string name="title_activity_samity_inspection_machine_data_u_i">সদস্যের বিস্তারিত</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

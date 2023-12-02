@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.SomityMemberDetailsUI"
+    tools:showIn="@layout/activity_somity_member_details_ui">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/count_8dp"
+                android:paddingTop="@dimen/count_5dp"
+                android:paddingEnd="@dimen/count_8dp"
+                android:paddingBottom="@dimen/count_10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/count_3dp"
+                    android:background="@color/colorNew"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/count_4dp"
+                    android:layout_marginBottom="@dimen/count_3dp"
+                    android:paddingBottom="@dimen/count_4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="তাঁতের শ্রেণি"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/count_10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="বর্তমান তাঁতের সংখ্যা "
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/count_10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="সরে জমিনে পাওয়া সংখ্যা"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/count_10sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvTatInformation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:id="@+id/id_empty_machineData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/count_10dp"
+                        android:layout_marginBottom="@dimen/count_10dp"
+                        android:padding="@dimen/count_10dp"
+                        android:text="No Machine Data found"
+                        android:textAlignment="center"
+                        android:textColor="@color/btnColorRed"
+                        android:textSize="@dimen/count_15sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/count_5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/count_6dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="30"
+                            android:text="মতব্য " />
+
+                        <EditText
+                            android:id="@+id/etMachineComments"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:hint="মতব্য লিখুন "
+                            android:textAlignment="center"
+                            android:textSize="@dimen/count_12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/count_6dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="30"
+                            android:text="পরিদর্শনের তারিখ " />
+
+                        <EditText
+                            android:id="@+id/etSelectDate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:clickable="true"
+                            android:drawableRight="@drawable/calendar_32"
+                            android:focusable="false"
+                            android:textAlignment="center"
+                            android:textColor="#028b62"
+                            android:textColorHint="#028b62"
+                            android:textSize="@dimen/count_13sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/count_5dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnCancelProfile"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/count_2dp"
+                            android:layout_weight=".5"
+                            android:background="#ff4f30"
+                            android:text="পেছনে যান"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/count_13sp" />
+
+                        <Button
+                            android:id="@+id/btnSubmitProfile"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/count_2dp"
+                            android:layout_weight=".5"
+                            android:background="@color/colorGreen"
+                            android:text="সেভ করুন"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/count_13sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/count_5dp"
+                    android:layout_height="@dimen/count_1dp"
+                    android:background="#009688"
+                    android:paddingTop="@dimen/count_1dp" />
+
+                <LinearLayout
+                    android:id="@+id/id_linear_layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/count_4dp"
+                    android:paddingTop="@dimen/count_5dp"
+                    android:paddingEnd="@dimen/count_4dp"
+                    android:paddingBottom="@dimen/count_5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="43"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="জাতীয় পরিচয় পত্র :"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="জন্ম তারিখ :"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="নাম (বাংলায়):"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="নাম (ইংরেজীতে):"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="পিতা/স্বামীর নাম :"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="স্থায়ী ঠিকানা :"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="বর্তমান ঠিকানা :"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="মোবাইল নম্বর :"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="বয়স :"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="গ্রাম :"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="ডাকঘর :"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="জেলা  :"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="থানা/উপজেলা  :"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="57"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvNid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="-"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:id="@+id/tvDob"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="-"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:id="@+id/tvApplicantName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="-"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:id="@+id/tvApplicantNameEn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="-"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:id="@+id/tvFaterOrHousband"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="-"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:id="@+id/tvPermanantAddr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="-"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:id="@+id/tvPresentAddr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="-"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:id="@+id/tvMobileNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="-"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:id="@+id/tvAge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="-"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:id="@+id/tvVillage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="-"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:id="@+id/tvPostOffice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="-"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:id="@+id/tvDistrict"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="-"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+
+                        <TextView
+                            android:id="@+id/tvUpozilla"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/count_4dp"
+                            android:paddingBottom="@dimen/count_4dp"
+                            android:text="-"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/count_11sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/count_1dp"
+                    android:background="#009688"
+                    android:paddingTop="@dimen/count_1dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/count_4dp"
+                        android:paddingTop="@dimen/count_5dp"
+                        android:paddingEnd="@dimen/count_4dp"
+                        android:paddingBottom="@dimen/count_5dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="43"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/count_4dp"
+                                android:paddingBottom="@dimen/count_4dp"
+                                android:text="বেসিক সেন্টার :"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/count_11sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/count_4dp"
+                                android:paddingBottom="@dimen/count_4dp"
+                                android:text="তাঁতি সমিতির নাম :"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/count_11sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/count_4dp"
+                                android:paddingBottom="@dimen/count_4dp"
+                                android:text="সমিতির নিবন্ধন নম্বর :"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/count_11sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/count_4dp"
+                                android:paddingBottom="@dimen/count_4dp"
+                                android:text="তাঁতি সমিতির সদস্য নম্বর :"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/count_11sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/count_4dp"
+                                android:paddingBottom="@dimen/count_4dp"
+                                android:text="গ্রুপ নম্বর :"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/count_11sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/count_4dp"
+                                android:paddingBottom="@dimen/count_4dp"
+                                android:text="গ্রুপ তৈরির তারিখ :"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/count_11sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="57"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvBasicCenterName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/count_4dp"
+                                android:paddingBottom="@dimen/count_4dp"
+                                android:text="--"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/count_11sp" />
+
+                            <TextView
+                                android:id="@+id/tvTatiSomityName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/count_4dp"
+                                android:paddingBottom="@dimen/count_4dp"
+                                android:text="--"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/count_11sp" />
+
+                            <TextView
+                                android:id="@+id/tvSomityRegNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/count_4dp"
+                                android:paddingBottom="@dimen/count_4dp"
+                                android:text="--"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/count_11sp" />
+
+                            <TextView
+                                android:id="@+id/tvSomityMemberNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/count_4dp"
+                                android:paddingBottom="@dimen/count_4dp"
+                                android:text="--"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/count_11sp" />
+
+                            <TextView
+                                android:id="@+id/tvGroupNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/count_4dp"
+                                android:paddingBottom="@dimen/count_4dp"
+                                android:text="--"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/count_11sp" />
+
+                            <TextView
+                                android:id="@+id/tvGroupCreationDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/count_4dp"
+                                android:paddingBottom="@dimen/count_4dp"
+                                android:text="--"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/count_11sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/count_1dp"
+                        android:background="#009688"
+                        android:paddingTop="@dimen/count_1dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
