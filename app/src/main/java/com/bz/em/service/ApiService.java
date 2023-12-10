@@ -1,17 +1,14 @@
 package com.bz.em.service;
 
 import com.bz.em.model.DueLoanCollectionData;
-import com.bz.em.model.InspectionMachineResult;
 import com.bz.em.model.InspectionMachineResultDTO;
 import com.bz.em.model.InstallmentInfo;
 import com.bz.em.model.LoanCollectionInfo;
 import com.bz.em.model.LoanInfo;
-import com.bz.em.model.LoanInspectionData;
 import com.bz.em.model.SamityInspectionMachineResultDTO;
 import com.bz.em.model.SamityMemberData;
 import com.bz.em.model.SamityMemberMachineDetailData;
 import com.bz.em.model.Somity;
-import com.bz.em.model.SomityInspection;
 import com.bz.em.model.SomityMemberDetail;
 import com.bz.em.model.TatInfo;
 import com.bz.em.model.User;
@@ -23,10 +20,7 @@ import java.util.List;
 import okhttp3.MultipartBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
-import retrofit2.http.Field;
-import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
-import retrofit2.http.Headers;
 import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.Part;
@@ -147,9 +141,15 @@ public interface ApiService {
             @Path("loanAccountId") long loanAccountId
     );
 
-    /*get repayment samity list*/
+    /*get repayment samity list*//*
     @GET("repayment-samity-list/")
-    Call<List<Somity>> getRepaymentSomityList();
+    Call<List<Somity>> getRepaymentSomityList();*/
+
+    /*get repayment samity list*/
+    @GET("repayment-samity-list-by-basicCenter?")
+    Call<List<Somity>> getRepaymentSomityList(
+            @Query("basicCenterId") long basicCenterId
+    );
 
     /*get repayment samity member lis*/
     @GET("repayment-applications-list-by-samity/")

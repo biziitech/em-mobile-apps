@@ -3,7 +3,20 @@ package com.bz.em.ui;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.bz.em.R;
 import com.bz.em.adapter.RvSomityListAdapter;
 import com.bz.em.connection.ApiConnection;
 import com.bz.em.model.Somity;
@@ -12,24 +25,7 @@ import com.bz.em.utils.EmConstants;
 import com.bz.em.utils.EmNetworkStateCheck;
 import com.bz.em.utils.EmSharedPreferenceManager;
 import com.bz.em.utils.EmUtils;
-import com.bz.em.utils.RecyclerTouchListener;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.recyclerview.widget.DefaultItemAnimator;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-import android.util.Log;
-import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import com.bz.em.R;
-
-import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -75,7 +71,7 @@ public class SomityListUI extends AppCompatActivity {
 
     private void gtSomityList() {
 
-        long officeID = EmSharedPreferenceManager.getLongVal("OFFICE_ID", this);
+        long office_id = EmSharedPreferenceManager.getLongVal("OFFICE_ID", this);
         long user_id = EmSharedPreferenceManager.getLongVal("USER_ID", this);
 
         try {
@@ -85,7 +81,7 @@ public class SomityListUI extends AppCompatActivity {
 
 
             if (navType.equals("REPAYMENTS")) {
-                call = service.getRepaymentSomityList();
+                call = service.getRepaymentSomityList(office_id);
             } else if (navType.equals("LOAN_INSPECTION")) {
                 call = service.getSomityList(user_id);
             } else {
